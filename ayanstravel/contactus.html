@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - ATravelInfo</title>
+    <link rel="stylesheet" href="/theme.css">
+    <link rel="stylesheet" href="/ALLHEADER.css">
+    <link rel="icon" href="/assets/favicon_io (3)/favicon.ico">
+</head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.intro {
+    margin-bottom: 20px;
+}
+/*==================HEADER-SECTION-One================*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+}
+/*==================HEADER-SECTION-One================*/
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Header Styles */
+header {
+    background-color: #034f5c;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid #033f49;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Logo */
+.logo h1 {
+    font-size: 26px;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    gap: 35px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffcc00;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.search-bar input {
+    padding: 12px 15px;
+    border: none;
+    font-size: 16px;
+    width: 250px;
+    outline: none;
+    color: #333;
+}
+
+.search-bar input::placeholder {
+    color: #888;
+}
+
+/* Professional Search Button */
+.search-button {
+    background-color: #ffcc00;
+    border: none;
+    display: flex;
+    align-items: center;
+    padding: 12px 25px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.search-button:hover {
+    background-color: #e6b800;
+    transform: scale(1.05);
+}
+
+.search-button i {
+    font-size: 16px;
+    margin-left: 8px;
+}
+
+.search-button .button-text {
+    color: #034f5c;
+    font-size: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        margin-bottom: 15px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .search-bar {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .search-bar input {
+        width: 100%;
+    }
+}
+
+/* Additional small screen adjustments */
+@media (max-width: 480px) {
+    .logo h1 {
+        font-size: 22px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    .search-bar {
+        flex-direction: column;
+    }
+
+    .search-bar input {
+        padding: 10px;
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .search-button {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+
+/*=========== Contact Section Styles ===========*/
+.contact-section {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form {
+    margin-top: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+.input-group textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/*=========== Footer Styles ===========*/
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 15px;
+}
+
+.footer-section h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    margin-bottom: 15px;
+}
+
+.social-links {
+    display: flex;
+    gap: 10px;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #4CAF50; /* Change color on hover */
+}
+
+.newsletter-form {
+    display: flex;
+}
+
+.newsletter-form input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.newsletter-form button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.newsletter-form button:hover {
+    background-color: #45a049;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    padding: 10px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+</style>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>ATravelInfo</h1>
+            </div>
+            <nav class="nav-links">
+                <a href="/index.html">Home</a>
+                <a href="/flights.html">Flights</a>
+                <a href="/hotels.html">Hotels</a>
+                <a href="/destinations.html">Destinations</a>
+                <a href="/contactus.html">Contact Us</a>
+            </nav>
+            <div class="search-bar">
+                <input type="text" placeholder="Search destinations...">
+                <button type="submit" class="search-button">Search</button>
+            </div>
+        </div>
+    </header>
+    <section class="contact-section">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p class="intro">We'd love to hear from you! Please fill out the form below, and we'll get back to you as soon as possible.</p>
+
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="input-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                    </div>
+
+                    <button type="submit">Send Message</button>
+                </form>
+                <p id="successMessage" class="success-message"></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>About Us</h4>
+                <p>Discover exciting travel destinations and get the best deals on your next adventure!</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#" target="_blank">Facebook</a>
+                    <a href="#" target="_blank">Twitter</a>
+                    <a href="#" target="_blank">Instagram</a>
+                    <a href="#" target="_blank">YouTube</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Subscribe to our Newsletter</h4>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 ATravelInfo. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+s

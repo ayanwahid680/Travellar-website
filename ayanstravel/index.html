@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/ALLHEADER.css">
+    <link rel="stylesheet" href="/theme.css">
+    <link rel="icon" href="/assets/favicon_io (3)/favicon.ico">
+    <title>ATravelInfo</title>
+    <style>
+ 
+/*==================HEADER-SECTION-One================*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Header Styles */
+header {
+    background-color: #034f5c;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid #033f49;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Logo */
+.logo h1 {
+    font-size: 26px;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    gap: 35px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffcc00;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.search-bar input {
+    padding: 12px 15px;
+    border: none;
+    font-size: 16px;
+    width: 250px;
+    outline: none;
+    color: #333;
+}
+
+.search-bar input::placeholder {
+    color: #888;
+}
+
+/* Professional Search Button */
+.search-button {
+    background-color: #ffcc00;
+    border: none;
+    display: flex;
+    align-items: center;
+    padding: 12px 25px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.search-button:hover {
+    background-color: #e6b800;
+    transform: scale(1.05);
+}
+
+.search-button i {
+    font-size: 16px;
+    margin-left: 8px;
+}
+
+.search-button .button-text {
+    color: #034f5c;
+    font-size: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        margin-bottom: 15px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .search-bar {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .search-bar input {
+        width: 100%;
+    }
+}
+
+/* Additional small screen adjustments */
+@media (max-width: 480px) {
+    .logo h1 {
+        font-size: 22px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    .search-bar {
+        flex-direction: column;
+    }
+
+    .search-bar input {
+        padding: 10px;
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .search-button {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+
+.logo h1 {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.nav-links a {
+    font-size: 1.2em;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffcc00;
+}
+/* Hero Section */
+.hero-section {
+    background: url('/assets/image/OIP1.jpeg') no-repeat center center/cover;
+    height: 75vh;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+.hero-section h2 {
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-section p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    background-color: #ff6600;
+    color: white;
+    padding: 1em 2em;
+    border: none;
+    cursor: pointer;
+    font-size: 1.3em;
+    margin-top: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #e65c00;
+}
+
+/* Destinations Section */
+.destinations-section {
+    padding: 50px 0;
+    background-color: #f0f0f0;
+}
+
+.destinations-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #333;
+}
+
+.destination-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.destination-item {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.destination-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.destination-item h3 {
+    padding: 15px;
+    font-size: 1.5em;
+    color: #0066cc;
+}
+
+.destination-item p {
+    padding: 0 15px 15px;
+    color: #555;
+    font-size: 1em;
+}
+
+.view-more-btn {
+    display: block;
+    text-align: center;
+    background-color: #ff6600;
+    color: white;
+    padding: 10px;
+    margin: 0 15px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.view-more-btn:hover {
+    background-color: #e65c00;
+}
+
+.destination-item:hover {
+    transform: translateY(-5px);
+}
+
+/* About Us Section */
+.about-section {
+    background-color: #fff;
+    padding: 60px 0;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.about-container img {
+    width: 50%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    font-size: 2.2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 1.1em;
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.learn-more-btn {
+    background-color: #ff6600;
+    color: white;
+    padding: 0.7em 1.5em;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.learn-more-btn:hover {
+    background-color: #e65c00;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    background-color: #0066cc;
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.testimonials-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.testimonial-slider {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.testimonial-item {
+    max-width: 500px;
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-item blockquote {
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+.testimonial-item footer {
+    font-size: 1em;
+    color: #0066cc;
+}
+
+/* Offers Section */
+.offers-section {
+    background-color: #ff6600;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.offers-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.offer-banner {
+    background-color: #ff9933;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    max-width: 600px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.offer-btn {
+    background-color: #0066cc;
+    color: white;
+    padding: 0.7em 1.5em;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.offer-btn:hover {
+    background-color: #004d99;
+}
+
+/* Newsletter Section */
+.newsletter-section {
+    background-color: #f0f0f0;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.newsletter-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.newsletter-section p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.newsletter-form input {
+    padding: 0.7em;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.newsletter-form button {
+    padding: 0.7em 1.5em;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    background-color: #e65c00;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+.footer-links {
+    margin: 10px 0;
+}
+
+.footer-links a {
+    color: white;
+    margin: 0 10px;
+    font-size: 0.9em;
+    transition: color 0.3s ease;
+}
+
+
+    </style>
+</head>
+<body>
+    <!--===============HEADER-SECTION-One==============-->
+    <!-- HEADER STARTS -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>ATravelInfo</h1>
+            </div>
+            <nav class="nav-links">
+                <a href="/index.html">Home</a>
+                <a href="/flights.html">Flights</a>
+                <a href="/hotals.html">Hotels</a>
+                <a href="/destination.html">Destinations</a>
+                <a href="/contactus.html">Contact Us</a>
+            </nav>
+            <div class="search-bar">
+                <input type="text" placeholder="Search destinations...">
+                <button type="submit" class="search-button">
+                    <span class="button-text">Search</span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER SECTION END  -->
+
+  
+    <!-- HERO SECTION -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h2>Discover Your Next Adventure!</h2>
+            <p>Explore breathtaking destinations and exclusive travel experiences tailored just for you.</p>
+            <a href="#destinations" class="cta-btn">Explore Now</a>
+        </div>
+    </section>
+
+    <!-- DESTINATIONS SECTION -->
+    <section id="destinations" class="destinations-section">
+        <div class="container">
+            <h2>Popular Destinations</h2>
+            <div class="destination-grid">
+                <div class="destination-item">
+                    <img src="/assets/image/image15.jpg" alt="Paris">
+                    <h3>Paris</h3>
+                    <p>The city of lights, known for its art, fashion, and culture.</p>
+                    <a href="#" class="view-more-btn">View More</a>
+                </div>
+                <div class="destination-item">
+                    <img src="/assets/image/image21.jpg" alt="New York">
+                    <h3>New York</h3>
+                    <p>The bustling city that never sleeps, famous for its skyline and landmarks.</p>
+                    <a href="#" class="view-more-btn">View More</a>
+                </div>
+                <div class="destination-item">
+                    <img src="/assets/image/image11.jpg" alt="Tokyo">
+                    <h3>Tokyo</h3>
+                    <p>A vibrant city blending tradition and modernity, renowned for its technology and cuisine.</p>
+                    <a href="#" class="view-more-btn">View More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT US SECTION -->
+    <section id="about-us" class="about-section">
+        <div class="container about-container">
+            <img src="/assets/image/th.jpeg" alt="About Us">
+            <div class="about-text">
+                <h2>About Us</h2>
+                <p>We are committed to providing personalized travel experiences that inspire and create lasting memories. Our expert team ensures your journey is seamless and unforgettable.</p>
+                <a href="#" class="learn-more-btn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <h2>What Our Travelers Say</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial-item">
+                    <blockquote>
+                        <p>"An unforgettable experience! I can't wait to book my next trip!"</p>
+                        <footer>- <strong>John Doe</strong></footer>
+                    </blockquote>
+                </div>
+                <div class="testimonial-item">
+                    <blockquote>
+                        <p>"Excellent service and wonderful destinations. Highly recommend!"</p>
+                        <footer>- <strong>Jane Smith</strong></footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OFFERS SECTION -->
+    <section id="offers" class="offers-section">
+        <div class="container">
+            <h2>Exclusive Offers</h2>
+            <div class="offer-banner">
+                <p>Check out our latest travel deals and save big on your next adventure!</p>
+                <a href="#" class="offer-btn">View Offers</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEWSLETTER SECTION -->
+    <section id="newsletter" class="newsletter-section">
+        <div class="container">
+            <h2>Stay Updated!</h2>
+            <p>Subscribe to our newsletter for the latest travel tips and exclusive offers.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+    <!--=========== Footer Section ===========-->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>About Us</h4>
+                <p>Discover exciting travel destinations and get the best deals on your next adventure!</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#" target="_blank">Facebook</a>
+                    <a href="#" target="_blank">Twitter</a>
+                    <a href="#" target="_blank">Instagram</a>
+                    <a href="#" target="_blank">YouTube</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Subscribe to our Newsletter</h4>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 ATravelInfo. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <!--=========== Footer Section End ===========-->
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    </body>
+    </html>
